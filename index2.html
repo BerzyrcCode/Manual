@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="html5">
+
+<head>
+    <title>Title Page</title>
+    <meta charset="UTF-8">
+    <meta name=description content="">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+    <div class="container">
+        <header id="header top" class="row">
+            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h1><a class="navbar-brand" href="#">HowTo[dot]com</a>
+                        </h1>
+                        <br>
+                        <br>
+                        <h5 style="color:white;">your guide how to ...</h5>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-s-12">
+                <h3>Glossary</h3>
+                <dl>
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+										travel</h3> <p>The following commands are used for traversing the directory structure of the Ubuntu terminal</p>
+										</a>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <dt>
+                                        <h5>ls</h5>
+                                    </dt>
+                                    <dd><b>ls :</b> is used to display the current contents of the current directory
+                                        <ul>
+                                            <li><b>ls -l :</b> will give a formated list that includes rights to the directory</li>
+                                            <li><b>ls /path/to/dir :</b> will display current contents of the path parameter</li>
+                                        </ul>
+                                    </dd>
+                                    <dt>
+                                        <h5>cd</h5>
+                                    </dt>
+                                    <dd><b>cd /path/to/dir/ :</b> is used to change directory to path parameter</dd>
+                                    <ul>
+                                        <li>
+                                            <dd><b>cd / :</b> This will take you to the root folder. You may get a access denied if the administrator is restricting access to this directory</dd>
+                                        </li>
+                                        <li>
+                                            <dd><b>cd ~ :</b> This will take you to your Home folder.</dd>
+                                        </li>
+                                    </ul>
+                                    <dt>
+                                        <h5>pwd</h5>
+                                    </dt>
+                                    <dd><b>pwd :</b> is used to display the current directory this is often helpful if you get lost.
+                                    </dd>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+										creation and destruction</h3><p>The following commands are used in creating and deleting directories(folders) and files</p>
+										</a>
+
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <dt>
+                                    <h5>touch</h5>
+                                </dt>
+                                <dd><b>touch somefile.txt :</b> This will create a file in the current path with the name of the file parameter</dd>
+                                <dt>
+                                    <h5>mkdir</h5>
+                                </dt>
+                                <dd><b>mkdir somedir :</b> This will create a folder(dir) with the name given to the name parameter</dd>
+                                <dt>
+                                    <h5>rm</h5>
+                                </dt>
+                                <ul>
+                                    <li>
+                                        <dd><b>rm somefile.txt :</b> will delete the file</dd>
+                                    </li>
+                                    <li>
+                                        <dd><b>rm -r somedir :</b> will delete a folder and all it contents</dd>
+                                    </li>
+                                    <dd>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </dl>
+        </div>
+    
+
+
+    
+    <div class="row">
+        <div class="col-md-10 col-xs-12 col-s-10">
+            <h5>To days how to is brought to you by the Internet "...why read a book when you can use the Internet to find out how it ends."</h5>
+            <p>The LAMP stack is one of the most popular web server configurations. To break it down first we have Linux which is similar but not UNIX. Was created in 1991 by Linus Benedict Torvalds <a href="#ref1">[Listserv]</a>. It is offten used by developers due the operating system be free. Though the rest of the LAMP stack can be used with Windows/MacOS/Unix. It is really meant to be coupled with linux. I chose to use <a href="">Ubuntu</a> 12.04 Linux. Due to my flamilarity with the operation system. Though you can certianly use any version of Linux. <i>one word of the wise this tutrurial uses the ubuntu/debian apt packagemanager to install the packages for the rest of the lamp stack. Though it will be a similiar process to install packages using other types of Linux. There will be some differences. Please look up the packagemanager for your version of linux</i>
+            </p>
+            <p>The second layers is the Apache web server. Created in 1995 by some Computer Scientist<a href="#ref2">[apache_about]</a>. It has become one of the most popular webservers on the web. For our purposes we are going to use the ouf of the box experience. With no change to any configuration files.</p>
+            <p>The third layers is our language layer PHP. Love it or hate it PHP is one of the most popular langues of the world wide web.
+                <br>The website <a href="http://us2.php.net/history">php.net</a> says this about the history of PHP :
+                <blockquote>"PHP has come a long way since its birth in the mid-1990's. From humble beginnings to becoming one of the most prominent languages powering the web, the evolution of PHP is a geek's fairy tale." <a href="#ref3">[php.net]</a>
+                </blockquote>
+                We will be writing a simple php program that will query our database full of fake data and display it to the screen.
+            </p>
+            <p>Our last and final layer is mysql the database. This is where all the information that our website will display.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-xs-12 col-s-10">
+                <p>So thats the LAMP stack <u>L</u>inux, <u>A</u>pache, <u>M</u>ySQL, <u>P</u>hP</p>
+                <p>Our goal today is to create a Linux server, install apache, mysql and php. Build a small php program to make it all works.</p>
+                <ol type="I">
+                    <span id="OS"></span>
+                    <li>
+                        <p>Installing the operation system. You best bet is to use a VM or another computer. To install the ubuntu server. Since ubuntu Server is done entiry from a terminal and no graphical interface it can be tough to follow along with a website. Though you certinaly use a tablet or your phone. You could even print this out this tutorial.</p>
+                        <p>i dont believe in reinventing the wheel, unless you can well make it better. So on install linux onto a computer phyiscal or virtual i will leave it up to the experts at <a href="http://www.ubuntu.com/download/desktop/try-ubuntu-before-you-install">ubuntu</a> your brst bet it to follow the directions to create a bootable Live-CD and then install it using <a href="https://www.virtualbox.org/">Virtual Box</a>
+                            <p>Once you have Linux in your preferred form up and running you should a see a screen like this.
+                                <img src="installmenu.png" alt="install menu">
+                            </p>
+                            <p>You will select "Install Ubuntu Server" <i>remember no mice just keyboard</i>.
+                                <p>Use the following screen shots as guilds following along with the commands or highlighted options.</p>
+                                <h5>choose Language</h5>
+                                <img src="Language.png" alt="">
+                                <h5>choose Location</h5>
+                                <img src="Location.png" alt="">
+                                <h5>configure keyboard</h5>
+                                <img src="configurekeyboard.png" alt="">
+                                <br>
+                                <br>
+                                <img src="configurekeyboard2.png" alt="">
+                                <br>
+                                <br>
+                                <img src="configurekeyboard3.png" alt="">
+                                <br>
+                                <br>
+                                <h5>Loading please be patient</h5>
+                                <img src="loading.png">
+                                <h5>choose a hostname or computer name. If you have a admin telling you what to type ask them you really dont want to mess this up. If at home on your home network and you have never done this before ubuntu will be fine. I'm user DevServer.
+                                </h5>
+                                <img src="hostname.png" alt="">
+                                <h5>name your user and give it a password. This is a development server and will never see the light of production so how strong you make your password is up you.</h5>
+                                <img src="usersetup.png" alt="">
+                                <img src="password.png">
+                                <h5>as mentioned this is a dev server and you should not need to encrypt your home folder.</h5>
+                                <img src="dontencrypthdir.png" alt="">
+                                <h5>partioning is out of scope of this tutorial so were going to use guided and use lvm</h5>
+                                <img src="uselvm.png">
+                                <h5>we will manually install updates</h5>
+                                <img src="installsecupdates.png" alt="">
+                                <h5>we will install our own software press the {tab} key and continue</h5>
+                                <img src="softwareselcetion.png" alt="">
+                                <h5>heed the warning if you are dual-booting linux along side another OS don't do this. though if this is a VM or different computer go right ahead.</h5>
+                                <img src="installgrub.png" alt="">
+                                <h5>finish the install
+                                    <strong>remove the CD</strong>
+                                </h5>
+                                <img src="finishinstall.png" alt="">
+                    </li>
+                    <span id="apache"></span>
+                    <li>
+                        <h5>we will now install apache :)
+                            <h5>
+                                <h5>upgrade apt-get</h5>
+                                <img src="upgradeaptget.png" alt="">
+                                <h5>update apt-get
+                                    <h5>
+                                        <img src="updateaptget.png">
+                                        <h5>install apache</h5>
+                                        <img src="installapache.png">
+                                        <h5>DONE! well that was easy. Go here using a web browser on a different computer</h5>
+                                        <img src="inet.png" alt="">
+                                        <br>
+                                        <br>
+                                        <img src="itworks.png" alt="">
+                    </li>
+                    <span id="mysql"></span>
+                    <li>
+                        <h5>now a quick word from our sponsors MySql "... it's My Sql not yours."
+                            <h5>
+                                <h5>we will now install mysql</h5>
+                                <img src="isntallmysql.png" alt="">
+                                <h5>its a dev server but give it a nice password.</h5>
+                                <img src="password4rootsql.png" alt="">
+                                <h5>create a user table like this</h5>
+                                <img src="loginmysql.png" alt="">
+                                <img src="createusertable.png" alt="">
+                                <h5>dont forget ( )</h5>
+                                <img src="error.png">
+                                <h5>put some fake data into the database</h5>
+                                <img src="fakedata.png" alt="">
+                                <h5>now exit</h5>
+                                <img src="exitmysql.png" alt="">
+                    </li>
+                    <span id="php"></span>
+                    <li>
+                        <h5>lets install php we're almost done</h5>
+                        <img src="installphp.png" alt="">
+                        <h5>also need the php-mysql module</h5>
+                        <img src="installmysqlmod.png" alt="">
+                        <h5>well php is done</h5>
+                    </li>
+                    <span id="app"></span>
+                    <li>
+                        <h5>ok some quick admin work so we can write to the www folder and create are little app. Follow the commands from the pictures.</h5>
+                        <h5>add current user to www-data</h5>
+                        <img src="addtowww-data.png" alt="">
+                        <h5>change owner of /var/www</h5>
+                        <img src="changeowner.png" alt="">
+                        <h5>create index.php</h5>
+                        <img src="createindexdontphp.png" alt="">
+                        <h5>make small app</h5>
+                        <img src="source.png">
+                        <h5>see it work</h5>
+                        <img src="itsalive.png">
+                    </li>
+            </div>
+        
+        <footer class="row">
+            <h1 id="ref1">REFERENCES GO HERE</h1>
+        </footer>
+    </div>
+</div>
+
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
